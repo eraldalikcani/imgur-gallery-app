@@ -1,0 +1,140 @@
+/* Gallery Container */
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Gallery Title */
+.gallery-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Select Container */
+.select-container {
+  margin-bottom: 10px;
+}
+
+.select-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Checkbox Container */
+.checkbox-container {
+  margin-bottom: 10px;
+}
+
+.checkbox-container label {
+  font-weight: bold;
+}
+
+/* Thumbnail Grid */
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.thumbnail {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.thumbnail .thumbnail-overlay {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.thumbnail .thumbnail-image {
+  flex-grow: 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.thumbnail .thumbnail-description {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.thumbnail-placeholder {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.thumbnail-placeholder .thumbnail-description {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.thumbnail-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.thumbnail-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Add any additional styles as needed */
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.pagination-button:focus {
+  outline: none;
+}
+
+.pagination-container span {
+  margin: 0 10px;
+  font-weight: bold;
+}
